@@ -7,4 +7,6 @@ router.get('/category', adminController.viewCategory);
 
 router.get('/bank', adminController.viewBank);
 
+router.get('/item', adminController.viewItem);
+
 module.exports = router;
