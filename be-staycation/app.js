@@ -3,6 +3,14 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+// mongoose
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb+srv://user:fDtvI3n3XzWXW8gZ@cluster0.cdgpm.mongodb.net/Staycation?retryWrites=true&w=majority',{
+  autoIndex: false,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
