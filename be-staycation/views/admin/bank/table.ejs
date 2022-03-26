@@ -18,6 +18,17 @@
               <th>Action</th>
             </tr>
           </thead>
+          <tbody>
+            <% for(let i = 0 ; i < bank.length ; i++) {%>
+              <tr>
+                <td><%= i + 1 %></td>
+                <td><%= bank[i].nameBank %></td>
+                <td><%= bank[i].nomorRekening %></td>
+                <td><%= bank[i].name %></td>
+                <td>Ac</td>
+              </tr>
+            <% } %>
+          </tbody>
         </table>
       </div>
     </div>
