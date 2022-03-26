@@ -1,4 +1,5 @@
 const Category = require('../models/Category');
+const Bank = require('../models/Bank');
 
 module.exports = {
     viewDashboard: (req, res) => {
@@ -68,10 +69,23 @@ module.exports = {
         }
     },
 
+    // CRUD Bank 
     viewBank: (req, res) => {
         res.render('admin/bank/view_bank',{ 
             title: "Staycation | Bank"
         });
+    },
+    addBank: async (req, res) => {
+        try {
+            await Bank.create(req.body);
+            req.flash('alertMessage', 'Success Add Category');
+            req.flash('alertStatus', 'success');
+            res.redirect('/admin/bank');
+        } catch (err) {
+            req.flash('alertMessage', `$err.message`);
+            req.flash('alertStatus', 'danger');      
+            res.redirect('/admin/bank');
+        }
     },
 
     viewItem: (req, res) => {
