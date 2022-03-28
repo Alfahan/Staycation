@@ -7,6 +7,7 @@ const itemSchema = new mongoose.Schema({
     city: { type: String, required: true },
     isPopular: { type: Boolean },
     description: { type: String, required: true },
+    categoryId: { type: ObjectId, ref: 'Category' },
     imageId: [{ type: ObjectId, ref: 'Image' }],
     featureId: [{ type: ObjectId, ref: 'Feature' }],
     activityId: [{ type: ObjectId, ref: 'Activity' }]
