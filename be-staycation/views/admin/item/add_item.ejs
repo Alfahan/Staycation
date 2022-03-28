@@ -1,7 +1,7 @@
 <div class="tab-pane fade" id="add-item" role="tabpanel" aria-labelledby="profile-tab">
     <div class="card shadow mb-4 mt-2">
         <div class="card-body">
-            <form action="">
+            <form action="/admin/item" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Title</label>
                     <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title" required>
@@ -18,12 +18,14 @@
                     <label for="name">Category</label>
                     <select class="form-control" name="categoryId" >
                         <option value="">--Category--</option>
-                        <option value="">Ambil dari database</option>
+                        <% for(let i = 0; i < category.length; i++) {%>
+                        <option value="<%= category[i].id %>"><%= category[i].name %></option>
+                        <%}%>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="name">Image</label>
-                    <input type="file" class="form-control" name="image" required>
+                    <input type="file" class="form-control" name="image" multiple required>
                 </div>
                 <div class="form-group">
                     <label for="name">Description</label>
