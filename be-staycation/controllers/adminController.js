@@ -1,5 +1,7 @@
 const Category = require('../models/Category');
 const Bank = require('../models/Bank');
+const fs = require('fs-extra');
+const path = require('path');
 
 module.exports = {
     viewDashboard: (req, res) => {
@@ -103,7 +105,27 @@ module.exports = {
     },
     editBank: async (req, res) => {
         try {
-            
+            const {id, name, nameBank, nomorRekening} = req.body;
+            const bank = await Bank.findOne({ _id: id });
+            if (req.file == undefined){
+                bank.name = name;
+                bank.nameBank = nameBank;
+                bank.nomorRekening = nomorRekening;
+                await bank.save();
+                req.flash('alertMessage', 'Success Add Bank');
+                req.flash('alertStatus', 'success');
+                res.redirect('/admin/bank');
+            }else{
+                await fs.unlink(path.join(`public/${bank.imageUrl}`));
+                bank.name = name;
+                bank.nameBank = nameBank;
+                bank.nomorRekening = nomorRekening;
+                bank.imageUrl = `images/${req.file.filename}`;
+                await bank.save();
+                req.flash('alertMessage', 'Success Add Bank');
+                req.flash('alertStatus', 'success');
+                res.redirect('/admin/bank');
+            }
         } catch (err) {
             req.flash('alertMessage', `${err.message}`);
             req.flash('alertStatus', 'danger');      

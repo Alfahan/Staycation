@@ -13,6 +13,7 @@ router.delete('/category/:id', adminController.deleteCategory);
 // Endpoint Bank
 router.get('/bank', adminController.viewBank);
 router.post('/bank', upload, adminController.addBank);
+router.put('/bank', upload, adminController.editBank);
 
 router.get('/item', adminController.viewItem);
 
