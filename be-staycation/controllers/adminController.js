@@ -34,7 +34,7 @@ module.exports = {
             req.flash('alertStatus', 'success');
             res.redirect('/admin/category');
         } catch (err) {
-            req.flash('alertMessage', `$err.message`);
+            req.flash(`alertMessage`, `${err.message}`);
             req.flash('alertStatus', 'danger');
             res.redirect('/admin/category');
         }
@@ -49,7 +49,7 @@ module.exports = {
             req.flash('alertStatus', 'success');
             res.redirect('/admin/category');
         } catch (err) {
-            req.flash('alertMessage', `$err.message`);
+            req.flash(`alertMessage`, `${err.message}`);
             req.flash('alertStatus', 'danger');
             res.redirect('/admin/category');
         }
@@ -63,7 +63,7 @@ module.exports = {
             req.flash('alertStatus', 'success');
             res.redirect('/admin/category');
         } catch (err) {
-            req.flash('alertMessage', `$err.message`);
+            req.flash(`alertMessage`, `${err.message}`);
             req.flash('alertStatus', 'danger');
             res.redirect('/admin/category');
         }
@@ -85,16 +85,32 @@ module.exports = {
     },
     addBank: async (req, res) => {
         try {
-            await Bank.create(req.body);
-            req.flash('alertMessage', 'Success Add Category');
+            const { name, nameBank, nomorRekening } = req.body;
+            await Bank.create({
+                name, 
+                nameBank,
+                nomorRekening,
+                imageUrl: `images/${req.file.filename}`
+            });
+            req.flash('alertMessage', 'Success Add Bank');
             req.flash('alertStatus', 'success');
             res.redirect('/admin/bank');
         } catch (err) {
-            req.flash('alertMessage', `$err.message`);
+            req.flash('alertMessage', `${err.message}`);
             req.flash('alertStatus', 'danger');      
             res.redirect('/admin/bank');
         }
     },
+    editBank: async (req, res) => {
+        try {
+            
+        } catch (err) {
+            req.flash('alertMessage', `${err.message}`);
+            req.flash('alertStatus', 'danger');      
+            res.redirect('/admin/bank');    
+        }
+    },
+
 
     viewItem: (req, res) => {
         res.render('admin/item/view_item',{ 
