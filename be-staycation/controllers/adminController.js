@@ -229,6 +229,32 @@ module.exports = {
             res.redirect('/admin/item');    
         }
     },
+    showEditItem: async (req, res) => {
+        try{
+            const { id } = req.params;
+            const item = await Item.findOne({ _id: id })
+                .populate({ path:'imageId', select:'id imageUrl' });
+            
+            const category = await Category.find();
+            const alertMessage = req.flash('alertMessage');
+            const alertStatus = req.flash('alertStatus');
+    
+            const alert = {message: alertMessage, status: alertStatus};
+    
+            res.render('admin/item/view_item',{ 
+                title: "Staycation | Edit Item",
+                alert,
+                item,
+                category,
+                action: 'edit'
+            });
+        }catch(err){
+            req.flash('alertMessage', `${err.message}`);
+            req.flash('alertStatus', 'danger');      
+            res.redirect('/admin/item');    
+        }
+    },
+    
 
     viewBooking: (req, res) => {
         try {
