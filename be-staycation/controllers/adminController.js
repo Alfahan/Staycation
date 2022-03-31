@@ -209,10 +209,9 @@ module.exports = {
     showImageItem: async (req, res) => {
         try{
             const { id } = req.params;
-            const item = await Item.find({ _id: id })
+            const item = await Item.findOne({ _id: id })
                 .populate({ path:'imageId', select:'id imageUrl' });
             
-            console.log(item.imageId);
             const alertMessage = req.flash('alertMessage');
             const alertStatus = req.flash('alertStatus');
     
