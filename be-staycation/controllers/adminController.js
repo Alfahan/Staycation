@@ -269,7 +269,7 @@ module.exports = {
                     await fs.unlink(path.join(`public/${imageUpdate.imageUrl}`));
                     imageUpdate.imageUrl = `images/${req.files[i].filename}`;
                     await imageUpdate.save();
-                    
+                }
                     item.title = title;
                     item.price = price;
                     item.city = city;
@@ -277,7 +277,11 @@ module.exports = {
                     item.categoryId = categoryId;
     
                     await item.save();
-                }
+
+                    req.flash('alertMessage', 'Success Update Item');
+                    req.flash('alertStatus', 'success');
+                    res.redirect('/admin/item');
+                
             } else {
                 item.title = title;
                 item.price = price;
