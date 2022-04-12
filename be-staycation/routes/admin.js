@@ -26,6 +26,7 @@ router.delete('/item/:id/delete',  adminController.deleteItem);
 
 // Endpont Detail Item
 router.get('/item/show-detail-item/:itemId', adminController.vieDetailItem);
+router.post('/item/add/feature', upload, adminController.addFeature);
 
 
 router.get('/booking', adminController.viewBooking);
