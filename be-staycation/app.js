@@ -6,14 +6,6 @@ const logger = require('morgan');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
-// mongoose
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://user:fDtvI3n3XzWXW8gZ@cluster0.cdgpm.mongodb.net/Staycation?retryWrites=true&w=majority',{
-  autoIndex: false,
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
