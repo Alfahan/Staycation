@@ -582,6 +582,7 @@ module.exports = {
                                     .populate('memberId')
                                     .populate('bankId');
 
+            console.log(booking);
             return res.render('admin/booking/view_booking',{ 
                 title: "Staycation | Booking",
                 user: req.session.user,

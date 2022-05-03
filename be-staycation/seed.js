@@ -4,7 +4,6 @@ const env = require('./helper/env');
 
 // Connect to MongoDB via Mongoose
 seeder.connect(env.Database_Server,{
-  // autoIndex: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, function () {
