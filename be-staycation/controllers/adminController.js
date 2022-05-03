@@ -5,6 +5,8 @@ const Image = require('../models/Image');
 const Feature = require('../models/Feature');
 const Activity = require('../models/Activity');
 const User = require('../models/Users');
+const Booking = require('../models/Booking');
+const Member = require('../models/Member');
 const fs = require('fs-extra');
 const path = require('path');
 const bcrypt = require('bcryptjs');
@@ -568,16 +570,39 @@ module.exports = {
         }
     },
 
-    viewBooking: (req, res) => {
+    viewBooking: async (req, res) => {
         try {
+            const booking = await Booking.find()
+                                    .populate('memberId')
+                                    .populate('bankId');
+
             return res.render('admin/booking/view_booking',{ 
                 title: "Staycation | Booking",
-                user: req.session.user
+                user: req.session.user,
+                booking
             });
+
         } catch (err) {
             req.flash('alertMessage', `${err.message}`);
             req.flash('alertStatus', 'danger');      
-            return res.redirect('/admin/bank'); 
+            return res.redirect('/admin/booking'); 
+        }
+    },
+    showDetailBooking: async (req, res) => {
+        const { id } = req.params;
+        try {
+            const booking = await Booking.findOne({ _id: id })                        
+                                    .populate('memberId')
+                                    .populate('bankId');
+            
+            res.render('admin/booking/show_detail_booking', {
+                title: "Staycation | Booking",
+                user: req.session.user,
+                booking
+            });
+
+        } catch (err) {
+            
         }
     }
 }
