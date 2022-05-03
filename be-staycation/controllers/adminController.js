@@ -581,16 +581,16 @@ module.exports = {
                 user: req.session.user,
                 booking
             });
-
         } catch (err) {
-            req.flash('alertMessage', `${err.message}`);
-            req.flash('alertStatus', 'danger');      
             return res.redirect('/admin/booking'); 
         }
     },
     showDetailBooking: async (req, res) => {
         const { id } = req.params;
         try {
+            const alertMessage = req.flash('alertMessage');
+            const alertStatus = req.flash('alertStatus');
+            const alert = {message: alertMessage, status: alertStatus};
             const booking = await Booking.findOne({ _id: id })                        
                                     .populate('memberId')
                                     .populate('bankId');
@@ -598,11 +598,50 @@ module.exports = {
             res.render('admin/booking/show_detail_booking', {
                 title: "Staycation | Booking",
                 user: req.session.user,
-                booking
+                booking,
+                alert
             });
-
         } catch (err) {
-            
+            return res.redirect('/admin/booking');
+        }
+    },
+    actionConfirmation : async (req, res) => {
+        const { id } = req.params;
+        try {
+            const booking = await Booking.findOne({ _id: id });
+            booking.payments.status = 'Accept';
+            await booking.save();
+            req.flash('alertMessage', 'Success Confirmation Payment');
+            req.flash('alertStatus', 'success');
+            return res.redirect(`/admin/booking/${id}`);
+        } catch (err) {
+            return res.redirect(`/admin/booking/${id}`);
+        }
+    },
+    actionConfirmation : async (req, res) => {
+        const { id } = req.params;
+        try {
+            const booking = await Booking.findOne({ _id: id });
+            booking.payments.status = 'Accept';
+            await booking.save();
+            req.flash('alertMessage', 'Success Confirmation Payment');
+            req.flash('alertStatus', 'success');
+            return res.redirect(`/admin/booking/${id}`);
+        } catch (err) {
+            return res.redirect(`/admin/booking/${id}`);
+        }
+    },
+    actionReject : async (req, res) => {
+        const { id } = req.params;
+        try {
+            const booking = await Booking.findOne({ _id: id });
+            booking.payments.status = 'Reject';
+            await booking.save();
+            req.flash('alertMessage', 'Success Reject Payment');
+            req.flash('alertStatus', 'success');
+            return res.redirect(`/admin/booking/${id}`);
+        } catch (err) {
+            return res.redirect(`/admin/booking/${id}`);
         }
     }
 }
