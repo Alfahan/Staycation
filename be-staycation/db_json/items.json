@@ -1,0 +1,62 @@
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc902223"), 
+    "country" : "Indonesia", 
+    "isPopular" : false, 
+    "imageId" : [
+        ObjectId("5e96cbe292b97300fc90cdb1"), 
+        ObjectId("5e96cbe292b97300fc90cdb2"), 
+        ObjectId("5e96cbe292b97300fc90cdb3")
+    ], 
+    "featureId" : [
+        ObjectId("5e96cbe292b97300fc90aa01"), 
+        ObjectId("5e96cbe292b97300fc90aa02"), 
+        ObjectId("5e96cbe292b97300fc90aa03"), 
+        ObjectId("5e96cbe292b97300fc90aa04"), 
+        ObjectId("5e96cbe292b97300fc90aa05"), 
+        ObjectId("5e96cbe292b97300fc90aa06"), 
+        ObjectId("5e96cbe292b97300fc90aa07"), 
+        ObjectId("5e96cbe292b97300fc90aa08")
+    ], 
+    "activityId" : [
+        ObjectId("5e96cbe292b97300fc90bb01"), 
+        ObjectId("5e96cbe292b97300fc90bb02"), 
+        ObjectId("5e96cbe292b97300fc90bb03"), 
+        ObjectId("5e96cbe292b97300fc90bb04")
+    ], 
+    "title" : "Seattle Rain", 
+    "price" : NumberInt(20), 
+    "city" : "Bandung", 
+    "description" : "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc902222"), 
+    "country" : "Indonesia", 
+    "isPopular" : false, 
+    "imageId" : [
+        ObjectId("5e96cbe292b97300fc90cdb4"), 
+        ObjectId("5e96cbe292b97300fc90cdb5"), 
+        ObjectId("5e96cbe292b97300fc90cdb6")
+    ], 
+    "featureId" : [
+        ObjectId("5e96cbe292b97300fc90aa09"), 
+        ObjectId("5e96cbe292b97300fc90aa10"), 
+        ObjectId("5e96cbe292b97300fc90aa11"), 
+        ObjectId("5e96cbe292b97300fc90aa12"), 
+        ObjectId("5e96cbe292b97300fc90aa13"), 
+        ObjectId("5e96cbe292b97300fc90aa14"), 
+        ObjectId("5e96cbe292b97300fc90aa15"), 
+        ObjectId("5e96cbe292b97300fc90aa16")
+    ], 
+    "activityId" : [
+        ObjectId("5e96cbe292b97300fc90bb05"), 
+        ObjectId("5e96cbe292b97300fc90bb06"), 
+        ObjectId("5e96cbe292b97300fc90bb07"), 
+        ObjectId("5e96cbe292b97300fc90bb08")
+    ], 
+    "title" : "Tabby Town", 
+    "price" : NumberInt(12), 
+    "city" : "Lampung", 
+    "description" : "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.", 
+    "__v" : NumberInt(0)
+}

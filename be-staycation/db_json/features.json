@@ -1,0 +1,128 @@
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa03"), 
+    "name" : "televison", 
+    "qty" : NumberInt(12), 
+    "imageUrl" : "images/feature-3.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa02"), 
+    "name" : "living room", 
+    "qty" : NumberInt(23), 
+    "imageUrl" : "images/feature-2.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa01"), 
+    "name" : "badroom", 
+    "qty" : NumberInt(2), 
+    "imageUrl" : "images/feature-1.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa04"), 
+    "name" : "televison", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-4.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa05"), 
+    "name" : "mbp/s", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-5.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa06"), 
+    "name" : "unit ready", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-6.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa07"), 
+    "name" : "refigrator", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-7.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa08"), 
+    "name" : "televion", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-8.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa10"), 
+    "name" : "living room", 
+    "qty" : NumberInt(23), 
+    "imageUrl" : "images/feature-2.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa09"), 
+    "name" : "badroom", 
+    "qty" : NumberInt(2), 
+    "imageUrl" : "images/feature-1.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa11"), 
+    "name" : "televison", 
+    "qty" : NumberInt(12), 
+    "imageUrl" : "images/feature-3.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa12"), 
+    "name" : "televison", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-4.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa13"), 
+    "name" : "mbp/s", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-5.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa14"), 
+    "name" : "unit ready", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-6.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa16"), 
+    "name" : "televion", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-8.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90aa15"), 
+    "name" : "refigrator", 
+    "qty" : NumberInt(5), 
+    "imageUrl" : "images/feature-7.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
