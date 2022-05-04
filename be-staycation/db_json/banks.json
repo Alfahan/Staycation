@@ -1,0 +1,16 @@
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc903322"), 
+    "nameBank" : "Mandiri", 
+    "accountNumber" : NumberInt(89898), 
+    "name" : "elfin", 
+    "imageUrl" : "images/logo mandiri.png", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc903323"), 
+    "nameBank" : "BCA", 
+    "accountNumber" : NumberInt(878678), 
+    "name" : "elfin", 
+    "imageUrl" : "images/logo bca.png", 
+    "__v" : NumberInt(0)
+}

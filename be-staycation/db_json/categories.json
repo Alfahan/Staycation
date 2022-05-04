@@ -1,0 +1,33 @@
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc901112"), 
+    "itemId" : [
+        ObjectId("5e96cbe292b97300fc902226"), 
+        ObjectId("5e96cbe292b97300fc902227"), 
+        ObjectId("5e96cbe292b97300fc902228"), 
+        ObjectId("5e96cbe292b97300fc902229")
+    ], 
+    "name" : "Hotels with large living room", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc901111"), 
+    "itemId" : [
+        ObjectId("5e96cbe292b97300fc902222"), 
+        ObjectId("5e96cbe292b97300fc902223"), 
+        ObjectId("5e96cbe292b97300fc902224"), 
+        ObjectId("5e96cbe292b97300fc902225")
+    ], 
+    "name" : "Houses with beauty backyard", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc901113"), 
+    "itemId" : [
+        ObjectId("5e96cbe292b97300fc902230"), 
+        ObjectId("5e96cbe292b97300fc902231"), 
+        ObjectId("5e96cbe292b97300fc902232"), 
+        ObjectId("5e96cbe292b97300fc902233")
+    ], 
+    "name" : "Apartment with kitchen", 
+    "__v" : NumberInt(0)
+}

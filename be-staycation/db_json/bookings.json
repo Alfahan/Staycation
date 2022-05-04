@@ -1,0 +1,22 @@
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90cee1"), 
+    "payments" : {
+        "status" : "Proses", 
+        "proofPayment" : "images/bukti.jpg", 
+        "bankFrom" : "BCA", 
+        "accountHolder" : "ang"
+    }, 
+    "bookingStartDate" : ISODate("2020-12-11T17:00:00.000+0000"), 
+    "bookingEndDate" : ISODate("2020-12-11T17:00:00.000+0000"), 
+    "invoice" : "1231231", 
+    "itemId" : {
+        "_id" : ObjectId("5e96cbe292b97300fc902222"), 
+        "title" : "Village Angga", 
+        "price" : NumberInt(6), 
+        "duration" : NumberInt(2)
+    }, 
+    "total" : NumberInt(12), 
+    "memberId" : ObjectId("5e96cbe292b97300fc903333"), 
+    "bankId" : ObjectId("5e96cbe292b97300fc903323"), 
+    "__v" : NumberInt(0)
+}

@@ -1,0 +1,64 @@
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb03"), 
+    "name" : "Labour and Wait", 
+    "type" : "Shopping", 
+    "imageUrl" : "images/activity-3.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb01"), 
+    "name" : "Green Lake", 
+    "type" : "Nature", 
+    "imageUrl" : "images/activity-1.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb04"), 
+    "name" : "Labour and Wait", 
+    "type" : "Shopping", 
+    "imageUrl" : "images/activity-4.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb02"), 
+    "name" : "Dog Clubs", 
+    "type" : "Pool", 
+    "imageUrl" : "images/activity-2.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902222"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb06"), 
+    "name" : "Dog Clubs", 
+    "type" : "Pool", 
+    "imageUrl" : "images/activity-2.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb05"), 
+    "name" : "Green Lake", 
+    "type" : "Nature", 
+    "imageUrl" : "images/activity-3.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb08"), 
+    "name" : "Labour and Wait", 
+    "type" : "Shopping", 
+    "imageUrl" : "images/activity-4.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e96cbe292b97300fc90bb07"), 
+    "name" : "Labour and Wait", 
+    "type" : "Shopping", 
+    "imageUrl" : "images/activity-1.png", 
+    "itemId" : ObjectId("5e96cbe292b97300fc902223"), 
+    "__v" : NumberInt(0)
+}
